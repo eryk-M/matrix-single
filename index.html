@@ -8,14 +8,49 @@
       href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,700,700i"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <title>Matrix - single page</title>
   </head>
   <body>
+    <div class="navigation">
+      <span class="navigation__logo">matrix</span>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">About</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Portfolio</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Blog</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="navigation__icon-box">
+        <a href="#" class="search"><i class="fas fa-search icon"></i></a>
+        <a href="#" class="cart"
+          ><i class="fas fa-shopping-cart icon"></i
+          ><span class="navigation__notification">0</span></a
+        >
+      </div>
+    </div>
     <header class="header">
       <div class="header__text-box">
         <h1 class="heading-primary">Welcome to our world</h1>
-        <p class="heading-paragraph">
+        <p class="paragraph">
           Lorem is simply dummy text of the printing and typesettings industry.
           Lorem ipsum has been the industry's standard dummy text ever since the
           1500s, when an unknown printer took a gallery of type and scrambled it
@@ -24,5 +59,83 @@
         <a href="#" class="btn">Learn More</a>
       </div>
     </header>
+
+    <main>
+      <section class="section-about">
+        <div class="heading-secondary">
+          <h2 class="heading-secondary__text">About us</h2>
+        </div>
+        <div class="about-us">
+          <div class="about-us__photo"></div>
+          <div class="about-us__intro">
+            <h3 class="about-us__heading-tertiary">
+              Hello! We're a Creative Agency
+            </h3>
+            <p class="about-us__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+              delectus aperiam ratione accusamus rerum ipsa, enim architecto
+              consectetur quae, minima quas natus voluptates repellendus facere!
+              A voluptatibus voluptates eveniet pariatur? Lorem, ipsum dolor sit
+              amet consectetur adipisicing elit. Ea sequi aut qui assumenda
+              debitis voluptatum perferendis itaque distinctio placeat sed.
+              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Amet, praesentium?
+            </p>
+            <ul class="about-us__list">
+              <li class="about-us__item">
+                <span>Mission</span> - we deliver uniqueness and quality
+              </li>
+              <li class="about-us__item">
+                <span>Skills</span> - delivering fast and excellent results
+              </li>
+              <li class="about-us__item">
+                <span>Clients</span> - satisfied clients thanks to our
+                experience
+              </li>
+            </ul>
+            <a href="#" class="btn-black"
+              ><i class="fas fa-folder"></i>Browse our works</a
+            >
+          </div>
+        </div>
+        <div class="features">
+          <div class="features__item">
+            <div class="features__item-icon">
+              <i class="fas fa-camera"></i>
+            </div>
+            <h4 class="features__text">Photography</h4>
+            <p class="features__paragraph">
+              If you are going to use a passage of Lorem Ipsum, you neet to be
+              sure there isn't anything embarrassing hidden in the middle of
+              text.
+            </p>
+          </div>
+
+          <div class="features__item">
+            <div class="features__item-icon linear-gradient">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <h4 class="features__text">Web design</h4>
+            <p class="features__paragraph">
+              If you are going to use a passage of Lorem Ipsum, you neet to be
+              sure there isn't anything embarrassing hidden in the middle of
+              text.
+            </p>
+          </div>
+
+          <div class="features__item">
+            <div class="features__item-icon">
+              <i class="far fa-comments"></i>
+            </div>
+            <h4 class="features__text">Marketing</h4>
+            <p class="features__paragraph">
+              If you are going to use a passage of Lorem Ipsum, you neet to be
+              sure there isn't anything embarrassing hidden in the middle of
+              text.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
