@@ -60,7 +60,7 @@ body {
 .header {
   height: 100vh;
   width: 100%;
-  background-image: url("/img/background.jpg");
+  background-image: url("https://eryk-m.github.io/matrix-single/img/background.jpg");
   background-size: cover;
   background-position: center top;
   position: relative;
