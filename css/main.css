@@ -1,0 +1,130 @@
+:root {
+  --color-primary: #2ecc71;
+  --color-primary-2: #43d17f;
+  --color-white: #fff;
+  --color-black: #000000;
+  --color-grey-dark: #3e403e;
+  --color-grey-dark-2: #393c41;
+  --color-grey-light: #bbbbbb;
+  --color-grey-light-1: #aaaaaa;
+  --color-blue-light: #94bad7;
+  --color-blue-light-1: #878f9c;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.heading-primary {
+  font-size: 6rem;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.heading-primary::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 0.5rem;
+  width: 17rem;
+  background-color: var(--color-primary);
+}
+
+.heading-paragraph {
+  font-size: 1.8rem;
+  width: 33%;
+  text-align: center;
+}
+
+.header {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/img/background.jpg");
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  z-index: -10;
+}
+
+.header:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -5;
+}
+
+.header__text-box {
+  width: 100%;
+  color: var(--color-white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn, .btn:link, .btn:visited {
+  font-size: 1.8rem;
+  color: var(--color-white);
+  width: 20rem;
+  text-decoration: none;
+  padding: 1.2rem 1rem;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  border: 2px solid white;
+  margin-top: 2.5rem;
+}
+
+.btn:hover {
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+.btn:active {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+/*# sourceMappingURL=main.css.map */
