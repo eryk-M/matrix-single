@@ -5,6 +5,8 @@
   --color-black: #000000;
   --color-grey-dark: #3e403e;
   --color-grey-dark-2: #393c41;
+  --color-grey-dark-3: #4c4e52;
+  --color-grey-dark-4: #606265;
   --color-grey-light: #bbbbbb;
   --color-grey-light-1: #aaaaaa;
   --color-blue-light: #94bad7;
@@ -13,6 +15,36 @@
 
 .linear-gradient {
   background: linear-gradient(320deg, #2ecc71 50%, #43d17f 50%);
+}
+
+@-webkit-keyframes showUp {
+  0% {
+    -webkit-transform: translateX(-15rem);
+            transform: translateX(-15rem);
+  }
+  50% {
+    -webkit-transform: translateX(-15rem);
+            transform: translateX(-15rem);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes showUp {
+  0% {
+    -webkit-transform: translateX(-15rem);
+            transform: translateX(-15rem);
+  }
+  50% {
+    -webkit-transform: translateX(-15rem);
+            transform: translateX(-15rem);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 *,
@@ -33,7 +65,6 @@ html {
 body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
-  height: 300vh;
 }
 
 .heading-primary {
@@ -70,9 +101,10 @@ body {
 }
 
 .heading-secondary__text {
+  width: 100%;
   position: absolute;
   top: 3rem;
-  left: 4.2rem;
+  left: 0.2rem;
   font-size: 5rem;
   font-weight: 400;
   -webkit-transform: skew(-9deg, 5deg);
@@ -258,15 +290,14 @@ body {
 
 .btn-black, .btn-black:link, .btn-black:visited {
   font-size: 1.8rem;
-  color: var(--color-black);
+  color: var(--color-grey-dark-2);
   width: 20rem;
   text-decoration: none;
   padding: 1.5rem 1rem;
   display: inline-block;
-  border: none;
   cursor: pointer;
   text-align: center;
-  border: 2px solid black;
+  border: 2px solid var(--color-grey-dark-2);
   margin-top: 4.1rem;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -274,7 +305,7 @@ body {
 
 .btn-black .fa-folder {
   margin-right: 0.8rem;
-  color: var(--color-grey-dark);
+  color: var(--color-grey-dark-2);
 }
 
 .btn-black:hover > .fa-folder {
@@ -394,7 +425,7 @@ body {
 .about-us__item span {
   font-style: normal;
   font-weight: 600;
-  color: var(--color-black);
+  color: var(--color-grey-dark-2);
 }
 
 .features {
@@ -462,6 +493,7 @@ body {
 }
 
 .features__text {
+  color: var(--color-grey-dark-2);
   margin-top: 3rem;
   font-size: 2rem;
 }
@@ -472,5 +504,187 @@ body {
   color: var(--color-grey-light);
   text-align: center;
   line-height: 2.3rem;
+}
+
+.works {
+  margin-top: 14rem;
+}
+
+.works__wrapper {
+  margin-top: 7rem;
+}
+
+.works__portfolioFilter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 1rem;
+}
+
+.works__portfolioFilter .current {
+  color: var(--color-primary);
+}
+
+.works__portfolioFilter a,
+.works__portfolioFilter a:active,
+.works__portfolioFilter a:link {
+  font-size: 1.4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color-grey-dark-3);
+}
+
+.works__portfolioFilter a:not(:last-child),
+.works__portfolioFilter a:active:not(:last-child),
+.works__portfolioFilter a:link:not(:last-child) {
+  margin-right: 5rem;
+}
+
+.works__portfolioContainer {
+  max-width: 160rem;
+  margin: 0 auto;
+  margin-top: 8rem;
+}
+
+.works__text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 100%;
+  padding: 4rem 4rem;
+  -webkit-transform: translateX(-16rem);
+          transform: translateX(-16rem);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.works__text-box--heading {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  position: relative;
+}
+
+.works__text-box--heading::after {
+  position: absolute;
+  content: "";
+  top: 0.2rem;
+  left: 0;
+  height: 0.3rem;
+  width: 5rem;
+  background-color: var(--color-primary);
+  margin-top: 3rem;
+}
+
+.works__text-box--secondary {
+  font-size: 1.4rem;
+  z-index: 1000;
+}
+
+.works__image {
+  float: left;
+  width: 40rem;
+  height: 40rem;
+  background-size: cover;
+  background-position: center;
+  color: var(--color-white);
+  overflow: hidden;
+}
+
+.works__image:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(96, 98, 101, 0.7);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.works__image:hover::before {
+  top: 0;
+}
+
+.works__image:hover > .works__text-box {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.app-1 {
+  background-image: url("https://eryk-m.github.io/matrix-single/img/app-1.jpg");
+}
+
+.app-2 {
+  background-image: url("https://eryk-m.github.io/matrix-single/img/app-2.jpg");
+}
+
+.photo-1 {
+  background-image: url("https://eryk-m.github.io/matrix-single/img/photo-1.jpg");
+}
+
+.photo-2 {
+  background-image: url("https://eryk-m.github.io/matrix-single/img/photo-2.jpg");
+}
+
+.web-1 {
+  background-image: url("https://eryk-m.github.io/matrix-single/img/web-1.jpg");
+}
+
+.web-2 {
+  background-image: url("https://eryk-m.github.io/matrix-single/img/web-2.jpg");
+}
+
+.animation-1 {
+  background-image: url("https://eryk-m.github.io/matrix-single/img/animation-1.jpg");
+}
+
+.animation-2 {
+  background-image: url("https://eryk-m.github.io/matrix-single/img/animation-2.jpg");
+}
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+  transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
 }
 /*# sourceMappingURL=main.css.map */
