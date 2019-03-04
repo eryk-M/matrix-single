@@ -2,6 +2,7 @@
   --color-primary: #2ecc71;
   --color-primary-2: #43d17f;
   --color-white: #fff;
+  --color-white-2: #eeeeee;
   --color-black: #000000;
   --color-grey-dark: #3e403e;
   --color-grey-dark-2: #393c41;
@@ -224,6 +225,8 @@ body {
 .navigation__icon-box .cart {
   margin-left: 2rem;
   position: relative;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .navigation__icon-box .icon {
@@ -353,7 +356,7 @@ body {
   background-image: url("https://eryk-m.github.io/matrix-single/img/about-us.jpg");
   background-size: cover;
   background-position: center;
-  border: 5px solid white;
+  outline: 5px solid rgba(255, 255, 255, 0.4);
   margin-right: 2rem;
 }
 
@@ -792,6 +795,8 @@ body {
 }
 
 .news__text {
+  font-style: italic;
+  line-height: 2.3rem;
   width: 90%;
   color: var(--color-grey-light);
   margin-top: 2.5rem;
@@ -838,5 +843,66 @@ body {
 
 .news__photo--link:hover + .news__heading {
   color: var(--color-primary);
+}
+
+.opinions {
+  margin-top: 15rem;
+}
+
+.opinions__text-box {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  -webkit-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
+  z-index: 5;
+}
+
+.opinions__image {
+  position: relative;
+  height: 70rem;
+  width: 100%;
+  background-image: url("https://eryk-m.github.io/matrix-single/img/opinion.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.opinions__image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.opinions__paragraph {
+  color: var(--color-white-2);
+  line-height: 2.1rem;
+  width: 45rem;
+  font-size: 1.5rem;
+}
+
+.opinions__paragraph::before {
+  font-family: arial;
+  position: absolute;
+  left: -2%;
+  content: "\201c";
+  font-size: 20rem;
+  color: var(--color-grey-dark-3);
+}
+
+.opinions__author {
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.opinions__author-info {
+  color: var(--color-white-2);
+  margin-top: 1rem;
+  font-size: 1.4rem;
 }
 /*# sourceMappingURL=main.css.map */
