@@ -1218,7 +1218,7 @@ body {
 
 .card__picture--1 {
   position: relative;
-  background-image: url("/img/standard.jpg");
+  background-image: url("https://eryk-m.github.io/matrix-single/img/standard.jpg");
 }
 
 .card__picture--1:after {
@@ -1232,7 +1232,7 @@ body {
 }
 
 .card__picture--2 {
-  background-image: url("/img/premium.jpg");
+  background-image: url("https://eryk-m.github.io/matrix-single/img/premium.jpg");
 }
 
 .card__picture--2:after {
@@ -1246,7 +1246,7 @@ body {
 }
 
 .card__picture--3 {
-  background-image: url("/img/ultimate.jpg");
+  background-image: url("https://eryk-m.github.io/matrix-single/img/ultimate.jpg");
 }
 
 .card__picture--3:after {
