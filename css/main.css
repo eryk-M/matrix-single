@@ -1455,17 +1455,17 @@ body {
 }
 
 .footer__box-news-item--1 {
-  background-image: url("/img/news-1-small.jpg");
+  background-image: url("https://eryk-m.github.io/matrix-single/img/news-1-small.jpg");
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
 .footer__box-news-item--2 {
-  background-image: url("/img/news-2-small.jpg");
+  background-image: url("https://eryk-m.github.io/matrix-single/img/news-2-small.jpg");
 }
 
 .footer__box-news-item--3 {
-  background-image: url("/img/news-3-small.jpg");
+  background-image: url("https://eryk-m.github.io/matrix-single/img/news-3-small.jpg");
 }
 
 .footer__box-news-wrapper {
@@ -1601,27 +1601,27 @@ body {
 }
 
 .footer__works-item--1 {
-  background-image: url("/img/works-small/animation-1-small.jpg");
+  background-image: url("https://eryk-m.github.io/matrix-single/img/works-small/animation-1-small.jpg");
 }
 
 .footer__works-item--2 {
-  background-image: url("/img/works-small/animation-2-small.jpg");
+  background-image: url("https://eryk-m.github.io/matrix-single/img/works-small/animation-2-small.jpg");
 }
 
 .footer__works-item--3 {
-  background-image: url("/img/works-small/app-1-small.jpg");
+  background-image: url("https://eryk-m.github.io/matrix-single/img/works-small/app-1-small.jpg");
 }
 
 .footer__works-item--4 {
-  background-image: url("/img/works-small/app-2-small.jpg");
+  background-image: url("https://eryk-m.github.io/matrix-single/img/works-small/app-2-small.jpg");
 }
 
 .footer__works-item--5 {
-  background-image: url("/img/works-small/photo-1-small.jpg");
+  background-image: url("https://eryk-m.github.io/matrix-single/img/works-small/photo-1-small.jpg");
 }
 
 .footer__works-item--6 {
-  background-image: url("/img/works-small/photo-2-small.jpg");
+  background-image: url("https://eryk-m.github.io/matrix-single/img/works-small/photo-2-small.jpg");
 }
 
 .footer__works-more, .footer__works-more:visited, .footer__works-more:link {
