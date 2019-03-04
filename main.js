@@ -1,8 +1,7 @@
-$(window).load(function() {
+/*      PORTFOLIO      */
+window.onload = () => {
   var $container = $(".works__portfolioContainer");
   $container.isotope({
-    // layoutMode: "fitRows",
-    // layoutMode: "horiz",
     resize: false,
     filter: "*",
     animationOptions: {
@@ -28,4 +27,4 @@ $(window).load(function() {
     });
     return false;
   });
-});
+};
