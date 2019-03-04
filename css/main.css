@@ -383,6 +383,7 @@ body {
 }
 
 .btn--form, .btn--form:link, .btn--form:visited {
+  font-family: inherit;
   background-color: transparent;
   margin-top: 2rem;
   color: var(--color-grey-light);
