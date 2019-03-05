@@ -141,7 +141,7 @@
         <div class="heading-secondary">
           <h2 class="heading-secondary__text">Recent works</h2>
         </div>
-        <div class="works__wrapper">
+        <!-- <div class="works__wrapper">
           <div class="works__portfolioFilter">
             <a href="#" onClick="return false;" data-filter="*" class="current"
               >All</a
@@ -227,8 +227,76 @@
             >
           </div>
         </div>
+        </div> -->
+        <div class="controls">
+          <button class="filter current" data-filter="all" type="button">
+            All
+          </button>
+          <button class="filter" data-filter=".animation" type="button">
+            Animation
+          </button>
+          <button class="filter" data-filter=".app" type="button">
+            App design
+          </button>
+          <button class="filter" data-filter=".photo" type="button">
+            Photography
+          </button>
+          <button class="filter" data-filter=".web" type="button">
+            web design
+          </button>
+        </div>
+        <div class="mix-wrapper">
+          <div id="mix-container">
+           <a href="#" class="work__link"><div class="mix animation work animation-1">
+                <div class="work__text-box">
+                    <span class="work__text-box--heading">Example</span>
+                    <span class="work__text-box--secondary">web design</span>
+                  </div></div></a> 
+            
+            <a href="#" class="work__link"> <div class="mix animation work animation-2 even">
+                <div class="work__text-box">
+                    <span class="work__text-box--heading">Example</span>
+                    <span class="work__text-box--secondary">web design</span>
+                  </div>
+            </div></a>
+            <a href="#" class="work__link"> <div class="mix web work web-1">
+                <div class="work__text-box">
+                    <span class="work__text-box--heading">Example</span>
+                    <span class="work__text-box--secondary">web design</span>
+                  </div>
+            </div></a>
+            <a href="#" class="work__link"> <div class="mix web work web-2 even">
+                <div class="work__text-box">
+                    <span class="work__text-box--heading">Example</span>
+                    <span class="work__text-box--secondary">web design</span>
+                  </div>
+            </div></a>
+            <a href="#" class="work__link"> <div class="mix app work app-1">
+                <div class="work__text-box">
+                    <span class="work__text-box--heading">Example</span>
+                    <span class="work__text-box--secondary">web design</span>
+                  </div>
+            </div></a>
+            <a href="#" class="work__link">  <div class="mix app work app-2 even">
+                <div class="work__text-box">
+                    <span class="work__text-box--heading">Example</span>
+                    <span class="work__text-box--secondary">web design</span>
+                  </div>
+            </div></a>
+            <a href="#" class="work__link"> <div class="mix photo work photo-1"><div class="work__text-box">
+                <span class="work__text-box--heading">Example</span>
+                <span class="work__text-box--secondary">web design</span>
+              </div></div></a>
+              <a href="#" class="work__link">  
+                <div class="mix photo work photo-2 even">
+                <div class="work__text-box">
+                <span class="work__text-box--heading">Example</span>
+                <span class="work__text-box--secondary">web design</span>
+              </div></div></a>
+            </div>
         </div>
       </section>
+
 
       <section class="news">
         <div class="heading-secondary">
@@ -748,8 +816,8 @@
         </div>
       </footer>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
