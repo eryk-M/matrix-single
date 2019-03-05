@@ -95,6 +95,7 @@ html {
 body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 .blur-wrapper {
@@ -104,7 +105,7 @@ body {
 
 .blur {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   z-index: 999;
@@ -253,10 +254,10 @@ a:visited {
 
 .burger {
   position: absolute;
-  width: 40px;
+  width: 35px;
   left: 50%;
   top: 50%;
-  height: 30px;
+  height: 25px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   cursor: pointer;
@@ -268,13 +269,13 @@ a:visited {
 .burger__bgc {
   display: none;
   position: fixed;
-  top: 50px;
-  right: 50px;
+  top: 40px;
+  right: 40px;
   background: -webkit-gradient(linear, right top, left bottom, from(#2ecc71), color-stop(#27bc66), color-stop(#20ac5a), color-stop(#189d50), to(#0f8e45));
   background: linear-gradient(to left bottom, #2ecc71, #27bc66, #20ac5a, #189d50, #0f8e45);
   border-radius: 50%;
-  height: 80px;
-  width: 80px;
+  height: 70px;
+  width: 70px;
   z-index: 10001;
 }
 
@@ -398,7 +399,7 @@ a:visited {
 
 .nav__burger .navigation__link {
   width: 100%;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   line-height: 80px;
   font-weight: 300;
