@@ -53,6 +53,40 @@
   }
 }
 
+@-webkit-keyframes moveCursor {
+  0% {
+    top: 95%;
+  }
+  33% {
+    top: 115%;
+    left: 85%;
+  }
+  66% {
+    top: 115%;
+    left: 85%;
+  }
+  100% {
+    top: 95%;
+  }
+}
+
+@keyframes moveCursor {
+  0% {
+    top: 95%;
+  }
+  33% {
+    top: 115%;
+    left: 85%;
+  }
+  66% {
+    top: 115%;
+    left: 85%;
+  }
+  100% {
+    top: 95%;
+  }
+}
+
 *,
 *::after,
 *::before {
