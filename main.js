@@ -9,10 +9,22 @@ $(document).ready(function() {
 });
 
 /* BURGER */
+
+const menu = document.querySelector(".nav__burger");
+const blur = document.querySelector(".blur-wrapper");
+
 document.querySelector(".burger").addEventListener("click", function() {
   const menu = document.querySelector(".nav__burger");
   const blur = document.querySelector(".blur-wrapper");
   this.classList.toggle("burgeractive");
   blur.classList.toggle("blur");
   menu.classList.toggle("active");
+});
+
+document.querySelector(".blur-wrapper").addEventListener("click", function() {
+  if (blur.classList.contains("blur")) {
+    blur.classList.remove("blur");
+    document.querySelector(".burger").classList.remove("burgeractive");
+    menu.classList.remove("active");
+  }
 });
