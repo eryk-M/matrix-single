@@ -468,6 +468,8 @@ a:visited {
       -ms-flex-align: center;
           align-items: center;
   height: 10rem;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .navigation__logo {
@@ -551,6 +553,15 @@ a:visited {
   .navigation {
     display: none;
   }
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--color-footer-bottom);
+  z-index: 10;
+  height: 100px;
 }
 
 .footer {
