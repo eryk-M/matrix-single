@@ -53,6 +53,40 @@
   }
 }
 
+@-webkit-keyframes moveCursor {
+  0% {
+    top: 95%;
+  }
+  33% {
+    top: 115%;
+    left: 85%;
+  }
+  66% {
+    top: 115%;
+    left: 85%;
+  }
+  100% {
+    top: 95%;
+  }
+}
+
+@keyframes moveCursor {
+  0% {
+    top: 95%;
+  }
+  33% {
+    top: 115%;
+    left: 85%;
+  }
+  66% {
+    top: 115%;
+    left: 85%;
+  }
+  100% {
+    top: 95%;
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -2067,6 +2101,12 @@ a:visited {
   opacity: 1;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+}
+
+@media screen and (max-width: 901px) {
+  .card .fa-mouse-pointer {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 901px) {
