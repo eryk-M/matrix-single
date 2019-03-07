@@ -14,6 +14,7 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="css/main.css" />
     <title>Matrix - single page</title>
   </head>
@@ -31,28 +32,28 @@
           </div>
 
         <ul class="navigation__list">
-            <a href="#" class="navigation__link nav-styling"><li class="navigation__item">
+            <li class="navigation__item"><a href="#" class="navigation__link nav-styling">
               Home
-            </li></a>
-            <a href="#" class="navigation__link nav-styling"> <li class="navigation__item">
+            </a></li>
+             <li class="navigation__item"><a href="#" class="navigation__link nav-styling">
               About
-            </li></a>
-            <a href="#" class="navigation__link nav-styling"> <li class="navigation__item">
+           </a> </li>
+             <li class="navigation__item"><a href="#" class="navigation__link nav-styling">
               Portfolio
-            </li></a>
-            <a href="#" class="navigation__link nav-styling"><li class="navigation__item">
+            </a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link nav-styling">
               Blog
-            </li></a>
-            <a href="#" class="navigation__link nav-styling"><li class="navigation__item">
+            </a></li>
+           <li class="navigation__item"><a href="#" class="navigation__link nav-styling">
              Contact
-            </li></a>
+            </a></li>
           </ul>
     </nav>
   </div>
 
   <div class="blur-wrapper"></div>
     <div class="navigation">
-      <span class="navigation__logo">matrix</span>
+      <span class="navigation__logo wow fadeInLeft">matrix</span>
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -72,7 +73,7 @@
           </li>
         </ul>
       </nav>
-      <div class="navigation__icon-box">
+      <div class="navigation__icon-box wow fadeInRight">
         <a href="#" class="search"><i class="fas fa-search icon"></i></a>
         <a href="#" class="cart"
           ><i class="fas fa-shopping-cart icon"></i
@@ -81,7 +82,7 @@
       </div>
     </div>
     <header class="header">
-      <div class="header__text-box">
+      <div class="header__text-box  wow fadeIn" data-wow-duration="1s">
         <h1 class="heading-primary">Welcome to our world</h1>
         <p class="paragraph">
           Lorem is simply dummy text of the printing and typesettings industry.
@@ -89,7 +90,7 @@
           1500s, when an unknown printer took a gallery of type and scrambled it
           to make a type specimen book.
         </p>
-        <a href="#" class="btn">Learn More</a>
+        <a href="#" class="btn wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">Learn More</a>
       </div>
     </header>
 
@@ -174,93 +175,7 @@
         <div class="heading-secondary">
           <h2 class="heading-secondary__text">Recent works</h2>
         </div>
-        <!-- <div class="works__wrapper">
-          <div class="works__portfolioFilter">
-            <a href="#" onClick="return false;" data-filter="*" class="current"
-              >All</a
-            >
-            <a href="#" onClick="return false;" data-filter=".animation"
-              >Animation</a
-            >
-            <a href="#" onClick="return false;" data-filter=".app"
-              >App design</a
-            >
-            <a href="#" onClick="return false;" data-filter=".photography"
-              >Photography</a
-            >
-            <a href="#" onClick="return false;" data-filter=".web"
-              >Web design</a
-            >
-          </div>
-          <div class="works__wrapper-2">
-          <div class="works__portfolioContainer">
-            <a href="#" class="animation">
-              <div class="animation-1 works__image">
-                <div class="works__text-box">
-                  <span class="works__text-box--heading">For Example</span>
-                  <span class="works__text-box--secondary">web design</span>
-                </div>
-              </div></a
-            >
-            <a href="#" class="animation"
-              ><div class="animation-2 works__image">
-                <div class="works__text-box">
-                  <span class="works__text-box--heading">For Example</span>
-                  <span class="works__text-box--secondary">web design</span>
-                </div>
-              </div></a
-            >
-            <a href="#" class="app"
-              ><div class="app-1 works__image">
-                <div class="works__text-box">
-                  <span class="works__text-box--heading">For Example</span>
-                  <span class="works__text-box--secondary">web design</span>
-                </div>
-              </div></a
-            >
-            <a href="#" class="app"
-              ><div class="app-2 works__image">
-                <div class="works__text-box">
-                  <span class="works__text-box--heading">For Example</span>
-                  <span class="works__text-box--secondary">web design</span>
-                </div>
-              </div></a
-            >
-            <a href="#" class="photography"
-              ><div class="photo-1 works__image">
-                <div class="works__text-box">
-                  <span class="works__text-box--heading">For Example</span>
-                  <span class="works__text-box--secondary">web design</span>
-                </div>
-              </div></a
-            >
-            <a href="#" class="photography"
-              ><div class="photo-2 works__image">
-                <div class="works__text-box">
-                  <span class="works__text-box--heading">For Example</span>
-                  <span class="works__text-box--secondary">web design</span>
-                </div>
-              </div></a
-            >
-            <a href="#" class="web"
-              ><div class="web-1 works__image">
-                <div class="works__text-box">
-                  <span class="works__text-box--heading">For Example</span>
-                  <span class="works__text-box--secondary">web design</span>
-                </div>
-              </div></a
-            >
-            <a href="#" class="web"
-              ><div class="web-2 works__image">
-                <div class="works__text-box">
-                  <span class="works__text-box--heading">For Example</span>
-                  <span class="works__text-box--secondary">web design</span>
-                </div>
-              </div></a
-            >
-          </div>
-        </div>
-        </div> -->
+
         <div class="controls">
           <button class="filter current" data-filter="all" type="button">
             All
@@ -525,7 +440,7 @@
         </div>
       </section>
 
-      <section class="promo">
+      <div class="promo">
         <div class="bg-video">
           <video class="bg-video__content" autoplay muted loop>
             <source
@@ -571,7 +486,7 @@
               class="promo-details"
           /></a>
         </div>
-      </section>
+      </div>
 
       <section class="offer">
         <div class="heading-secondary">
@@ -677,7 +592,7 @@
 
       <footer class="footer">
         <div class="footer__top">
-          <a href="#" class="footer__top-arrow-link"> 
+          <a data-scroll href="#" class="footer__top-arrow-link"> 
           <div class="arrow-border">
             <div class="footer__top-arrow">
               <i class="fas fa-angle-up"></i>
@@ -782,7 +697,7 @@
                   ><div class="footer__works-item--6 works-item-details"></div
                 ></a>
               </div>
-              <a href="#works" class="footer__works-more"
+              <a data-scroll href="#works" class="footer__works-more"
                 >View more <span>&rarr;</span></a
               >
             </div>
@@ -853,5 +768,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
     <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/15.2.1/smooth-scroll.min.js"></script>
+    <script>
+      new WOW().init();
+      var scroll = new SmoothScroll('a[href*="#"]');
+      </script>
   </body>
 </html>

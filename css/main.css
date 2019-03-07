@@ -430,12 +430,15 @@ a:visited {
 
 .nav__burger .navigation__item {
   height: 80px;
+  width: 100%;
+  text-align: center;
 }
 
 .nav__burger .navigation__link {
+  display: block;
   width: 100%;
+  height: 100%;
   font-size: 2.5rem;
-  text-align: center;
   line-height: 80px;
   font-weight: 300;
 }
@@ -579,6 +582,7 @@ a:visited {
 
 .footer_bottom {
   height: 6.5rem;
+  margin-top: 50px;
   background-color: var(--color-footer-bottom);
 }
 
@@ -1171,8 +1175,8 @@ a:visited {
 
 .work {
   float: left;
-  height: 400px;
-  width: 400px;
+  height: 340px;
+  width: 340px;
   background-position: center;
   background-size: cover;
   z-index: 1;
@@ -1262,8 +1266,8 @@ a:visited {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1600px;
-  min-height: 800px;
+  max-width: 1360px;
+  min-height: 680px;
   margin: 0 auto;
   margin-top: 5rem;
 }
@@ -1320,17 +1324,6 @@ a:visited {
 
 #mix-container .mix {
   display: none;
-}
-
-@media screen and (max-width: 1601px) {
-  .mix-wrapper {
-    max-width: 1360px;
-    min-height: 680px;
-  }
-  .work {
-    height: 340px;
-    width: 340px;
-  }
 }
 
 @media screen and (max-width: 1362px) {
@@ -2378,7 +2371,7 @@ a:visited {
 }
 
 .footer__top {
-  height: 58rem;
+  height: 60rem;
   background-color: var(--color-footer-main);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2411,6 +2404,8 @@ a:visited {
 @media only screen and (max-width: 601px) {
   .footer__top {
     height: 160rem;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
 }
 
@@ -2476,6 +2471,13 @@ a:visited {
 @media only screen and (max-width: 601px) {
   .footer__box:not(:last-child) {
     margin-bottom: 5rem;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 601px) {
+  .footer__box {
+    width: 80%;
   }
 }
 
