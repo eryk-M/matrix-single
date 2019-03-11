@@ -35,16 +35,16 @@
             <li class="navigation__item"><a href="#" class="navigation__link nav-styling">
               Home
             </a></li>
-             <li class="navigation__item"><a href="#" class="navigation__link nav-styling">
+             <li class="navigation__item"><a data-scroll href="#about" class="navigation__link nav-styling">
               About
            </a> </li>
-             <li class="navigation__item"><a href="#" class="navigation__link nav-styling">
+             <li class="navigation__item"><a href="#works" class="navigation__link nav-styling">
               Portfolio
             </a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link nav-styling">
+            <li class="navigation__item"><a href="#blog" class="navigation__link nav-styling">
               Blog
             </a></li>
-           <li class="navigation__item"><a href="#" class="navigation__link nav-styling">
+           <li class="navigation__item"><a href="#contact" class="navigation__link nav-styling">
              Contact
             </a></li>
           </ul>
@@ -57,19 +57,19 @@
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" class="navigation__link nav-styling item__list">Home</a>
+            <a data-scroll href="#" class="navigation__link nav-styling item__list">Home</a>
           </li>
           <li class="navigation__item item__list">
-            <a href="#" class="navigation__link nav-styling">About</a>
+            <a data-scroll href="#about" class="navigation__link nav-styling">About</a>
           </li>
           <li class="navigation__item item__list">
-            <a href="#" class="navigation__link nav-styling">Portfolio</a>
+            <a data-scroll href="#works" class="navigation__link nav-styling">Portfolio</a>
           </li>
           <li class="navigation__item item__list">
-            <a href="#" class="navigation__link nav-styling">Blog</a>
+            <a data-scroll href="#blog" class="navigation__link nav-styling">Blog</a>
           </li>
           <li class="navigation__item item__list">
-            <a href="#" class="navigation__link nav-styling">Contact</a>
+            <a data-scroll href="#contact" class="navigation__link nav-styling">Contact</a>
           </li>
         </ul>
       </nav>
@@ -96,7 +96,7 @@
 
     <main>
       <section class="section-about">
-        <div class="heading-secondary">
+        <div class="heading-secondary" id="about">
           <h2 class="heading-secondary__text">About us</h2>
         </div>
         <div class="about-us">
@@ -246,7 +246,7 @@
       </section>
 
 
-      <section class="news">
+      <section class="news" id="blog">
         <div class="heading-secondary">
           <h2 class="heading-secondary__text">Our news</h2>
         </div>
@@ -256,7 +256,7 @@
               <div class="news__photo news-1">
                 <span class="news__more">Read more...</span>
               </div></a
-            >
+              >
             <h4 class="news__heading">
               Railway station
             </h4>
@@ -591,7 +591,7 @@
       </section>
 
       <footer class="footer">
-        <div class="footer__top">
+        <div class="footer__top" id="contact">
           <a data-scroll href="#" class="footer__top-arrow-link"> 
           <div class="arrow-border">
             <div class="footer__top-arrow">
@@ -772,7 +772,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/15.2.1/smooth-scroll.min.js"></script>
     <script>
       new WOW().init();
-      var scroll = new SmoothScroll('a[href*="#"]');
+      var scroll = new SmoothScroll('a[href*="#"]',{
+        speed: 600,
+        // speedAsDuration: true
+        header: '.fixed'
+      });
       </script>
   </body>
 </html>

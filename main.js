@@ -9,7 +9,6 @@ $(document).ready(function() {
 });
 
 /* BURGER */
-
 const menu = document.querySelector(".nav__burger");
 const blur = document.querySelector(".blur-wrapper");
 const navigation = document.querySelector(".navigation");
