@@ -1,5 +1,7 @@
 # Matrix project
 
+![alt text](https://i.imgur.com/BnrYJRo.jpg)
+
 PSD to HTML
 
 ## My first landing page
