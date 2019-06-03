@@ -14,14 +14,12 @@ const blur = document.querySelector(".blur-wrapper");
 const navigation = document.querySelector(".navigation");
 
 document.querySelector(".burger").addEventListener("click", function() {
-  const menu = document.querySelector(".nav__burger");
-  const blur = document.querySelector(".blur-wrapper");
   this.classList.toggle("burgeractive");
   blur.classList.toggle("blur");
   menu.classList.toggle("active");
 });
 
-document.querySelector(".blur-wrapper").addEventListener("click", function() {
+document.querySelector(".blur-wrapper").addEventListener("click", () => {
   if (blur.classList.contains("blur")) {
     blur.classList.remove("blur");
     document.querySelector(".burger").classList.remove("burgeractive");
@@ -30,8 +28,47 @@ document.querySelector(".blur-wrapper").addEventListener("click", function() {
 });
 
 /*  NAVIGATION FIXED  */
-window.addEventListener("scroll", function() {
-  window.scrollY > 600
-    ? navigation.classList.add("fixed")
-    : navigation.classList.remove("fixed");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 600) {
+    navigation.classList.add("fixed");
+    setTimeout(() => {
+      navigation.classList.add("fixed__top");
+    }, 500);
+  } else {
+    navigation.classList.remove("fixed", "fixed__top");
+  }
 });
+
+/* HEADER BG */
+let headerBgc = document.querySelector(".header");
+let images = ["background.jpg", "background2.jpg", "background3.jpg"];
+const dots = [...document.querySelectorAll(".header__dots span")];
+const time = 3500;
+let activeDot = 0;
+
+dots.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    activeDot = index;
+    changeBgc(index);
+    changeDot();
+  });
+});
+
+const changeDot = () => {
+  const active = dots.findIndex(dot => dot.classList.contains("active__dot"));
+  dots[active].classList.remove("active__dot");
+  dots[activeDot].classList.add("active__dot");
+};
+
+const changeBgc = index => {
+  index || index === 0 ? (activeDot = index) : activeDot++;
+  if (activeDot === images.length) {
+    activeDot = 0;
+  }
+  headerBgc.style.backgroundImage = `url(https://eryk-m.github.io/matrix-single/img/${
+    images[activeDot]
+  })`;
+  changeDot();
+};
+
+setInterval(changeBgc, time);
