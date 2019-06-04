@@ -40,7 +40,7 @@ window.addEventListener("scroll", () => {
 });
 
 /* HEADER BG */
-let headerBgc = document.querySelector(".header");
+const headerBgc = document.querySelector(".header__background");
 let images = ["background.jpg", "background2.jpg", "background3.jpg"];
 const dots = [...document.querySelectorAll(".header__dots span")];
 const time = 3500;
@@ -65,9 +65,9 @@ const changeBgc = index => {
   if (activeDot === images.length) {
     activeDot = 0;
   }
-  headerBgc.style.backgroundImage = `url(https://eryk-m.github.io/matrix-single/img/${
+  headerBgc.src = `https://eryk-m.github.io/matrix-single/img/${
     images[activeDot]
-  })`;
+  }`;
   changeDot();
 };
 
